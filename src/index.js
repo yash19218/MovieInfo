@@ -5,10 +5,10 @@ import { createRoot } from 'react-dom/client';
 
 import './index.css';
 import App from './components/App';
-import { movies } from './reducers';
+import { rootReducer } from './reducers';
 
 
-const store = createStore(movies);
+const store = createStore(rootReducer);
 console.log('Store',store);
 // console.log('BEFORE STATE',store.getState());
 
