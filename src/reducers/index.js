@@ -1,3 +1,4 @@
+import { combineReducers } from 'redux';
 import {ADD_MOVIES,ADD_FAVOURITE,REMOVE_FAVOURITE,SET_SHOW_FAVOURITES} from '../actions';
 
 const initialStateMovies = {
@@ -62,3 +63,8 @@ export  function rootReducer(state=initialRootState,action){
         search:search(state.search,action)
     }
 }
+//internallly above is done by combineReducers redux is smart enough!
+// export default combineReducers({
+//     movies,//movie Redcuer
+//     search//search Reducer
+// });
