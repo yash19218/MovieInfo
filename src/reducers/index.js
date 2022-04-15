@@ -41,3 +41,21 @@ export function movies (state = initialStateMovies,action) {
             return state;
     }
 }
+
+const initialSearchState = {
+    result:{}
+}
+export function search(state = initialSearchState,action){
+    return state;
+}
+
+const initialRootState = {
+    movies:initialStateMovies ,
+    search:initialSearchState
+}
+export function rootReducer(state=initialRootState,action){
+    return{
+        movies:movies(state,action),
+        search:search(state,action)
+    }
+}
