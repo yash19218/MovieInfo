@@ -122,8 +122,6 @@ body {
   border-radius: 3px;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #f1f1f1;
   display: flex;
-  width: 70%;
-  margin-left: 248px;
 }
 .movie-card:not(:first-child) {
   margin-top: 20px;
@@ -181,7 +179,6 @@ body {
   text-shadow: none;
 }
 .no-movies {
-  margin-left: 250px;
   padding: 20px 0;
   font-size: 20px;
   color: #6d6d6d;
